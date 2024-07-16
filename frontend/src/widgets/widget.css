@@ -1,0 +1,8 @@
+.tool_tip {
+    cursor: help;
+    position: relative;
+}
+
+.tool_tip {
+    font-size: 14px;
+}

@@ -1,0 +1,207 @@
+.carousel_item {
+    /* min-height: 100%; */
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.carousel_item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel_view {
+    cursor: pointer;
+}
+
+.carousel_view_offer {
+    height: 145px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel_view_offer img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 10px;
+    object-fit: contain;
+}
+
+.carousel_view_cotent {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1.5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    display: none;
+    background: #0000008a;
+    transition: all 8s ease-in-out forwards;
+    /* background: black; */
+    /* background: linear-gradient( 60deg, rgba(0, 0, 0, 0.7777485994397759) 30%, rgba(255, 255, 255, 0) 100%); */
+}
+
+.carousel_view:hover+.carousel_view_cotent {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 8s ease-in forwards;
+}
+
+.carousel_view_cotent:hover {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 8s ease-in forwards;
+}
+
+
+/* .carousel_view_cotent:hover {} */
+
+.carousel_message_offer {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    /* opacity: 0.9; */
+    border-top: 0.5px solid white;
+    color: black;
+    /* position: absolute;
+    bottom: 0; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.carousel_view:hover>.carousel_message_offer {
+    opacity: 0;
+}
+
+.carousel_message_offer:hover {
+    opacity: 0;
+}
+
+.carousel_view_final_offer {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel_view_final_offer .carousel_view_cotent {
+    background: linear-gradient( 60deg, rgba(0, 99, 209, 0.5) 30%, rgba(0, 0, 0, 0.7777485994397759) 100%);
+}
+
+.carousel_img {
+    width: 100%;
+    flex: 1;
+    height: 400px;
+}
+
+.carousel_img img {
+    width: inherit;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel_message_view {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background: white;
+    /* opacity: 0.9; */
+    border-top: 0.5px solid white;
+    color: black;
+    /* position: absolute;
+    bottom: 0; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.carousel_message_btn {
+    width: 90px;
+    height: 40px;
+    /* padding: 7px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: auto; */
+    border-radius: 5px;
+    padding: "2px auto";
+    opacity: 1;
+    cursor: pointer;
+    background-color: #0063d1;
+    align-items: center;
+}
+
+.carousel_message_btn label {
+    color: white;
+    margin-top: 10px;
+}
+
+.carousel_message_text label {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel_message_text span {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .carousel_item {
+        height: 250px;
+    }
+}

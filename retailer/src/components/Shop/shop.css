@@ -1,0 +1,91 @@
+.view_shop_grid .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 5px;
+    align-items: stretch;
+}
+
+.view_shop_grid .grid>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.view_shop_grid .grid>article img {
+    max-width: 100%;
+}
+
+.view_shop_grid .grid .text {
+    padding: 20px;
+    text-align: center;
+}
+
+.view_shop_grid .grid .text h3 {
+    font-size: 1.4rem;
+    font-family: "Fredoka One", cursive;
+}
+
+.view_shop_grid .grid .text p {
+    font-size: 0.9rem;
+}
+
+.view_shop_grid .grid .text p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #555;
+    font-family: "Courgette", cursive;
+}
+
+.retailer_shop_layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.retailer_shop_layout .sidebar {
+    width: 380px;
+}
+
+.product_grid_view .card {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    margin: 0 0.75rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: #252a32;
+    background: #ffffff;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.product_grid_view .card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.product_grid_view .actions-secondary {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 2;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product_grid_view .tocart {
+    width: 250px;
+    padding: 11px 5%;
+}
+
+.product_filter_items {
+    width: 100%;
+    padding: 10px;
+}

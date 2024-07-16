@@ -1,0 +1,165 @@
+.edit_retailer {
+    background: #fff;
+    width: 100%;
+    padding: 1rem;
+}
+
+.edit_retailer .title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #374151;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #d7dbdf;
+}
+
+.edit_retailer .form-group {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_retailer .textarea-group label,
+.edit_retailer .form-group label {
+    color: #374151;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+
+.edit_retailer .form-group [type],
+.edit_retailer .textarea-group textarea {
+    border: 1px solid #d2d6db;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.edit_retailer .form-group [type]:hover,
+.edit_retailer .textarea-group textarea:hover {
+    border-color: #a8afb9;
+}
+
+.edit_retailer .form-group [type]:focus,
+.edit_retailer .textarea-group textarea:focus {
+    border-color: #5850eb;
+}
+
+.edit_retailer .textarea-group {
+    margin-top: 24px;
+}
+
+.edit_retailer .textarea-group textarea {
+    resize: none;
+    width: 100%;
+    margin-top: 10px;
+    height: calc(100% - 59px);
+}
+
+.edit_retailer .button {
+    font-weight: bold;
+    line-height: 19px;
+    background: #5850eb;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.edit_retailer .button:hover {
+    background: #6e67ee;
+}
+
+.edit_retailer .button:focus {
+    background: #4239e8;
+}
+
+.edit_retailer .profile_img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.edit_retailer .profile_img img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}
+
+.edit_retailer .profile_img .image_input {
+    display: none;
+}
+
+.profile_table_button {
+    height: 40px;
+    min-width: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    color: white;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.profile_table_button i {
+    margin-right: 10px;
+}
+
+.profile_title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #374151;
+    padding-bottom: 11px;
+    margin-left: 15px;
+    /* border-bottom: 1px solid #d7dbdf; */
+}
+
+@media screen and (min-width: 768px) {
+    .edit_retailer .container {
+        margin: 2rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        max-width: 32rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .edit_retailer .container {
+        max-width: 80%;
+        width: 100%;
+    }
+    .edit_retailer .grid {
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+    .edit_retailer .email-group {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .edit_retailer .phone-group {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .edit_retailer .textarea-group {
+        grid-column: 3;
+        grid-row: span 2;
+        margin-right: 2rem;
+    }
+    .edit_retailer .button-container {
+        text-align: right;
+    }
+    .edit_retailer .button {
+        /* bon, bon, bon
+		c'est pas tout mais j'ai faim moi ^^
+		*/
+        width: auto;
+    }
+}

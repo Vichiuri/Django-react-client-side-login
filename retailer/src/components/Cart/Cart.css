@@ -1,0 +1,23 @@
+.product-image-container-6551545743 {
+    width: 100px;
+}
+
+.product-image-container-6551545743 span.product-image-wrapper {
+    padding-bottom: 100%;
+}
+.table_button {
+    width: 90px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    border-radius: 5px;
+    padding: "2px auto";
+    color: #fff;
+    cursor: pointer;
+}
+
+.table_button i {
+    margin-right: 10px;
+}
