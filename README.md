@@ -6,6 +6,8 @@ The project is designed to enhance the order placement process by allowing retai
 ## Technologies Used
 
 - Django - version 3.2
+- React
+- Redux
 - Node js - version 14.7
 - Bash scripts - version 5.0
 
